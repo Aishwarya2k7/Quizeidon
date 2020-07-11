@@ -38,3 +38,9 @@ button{
   background-color: #33ccff;
   
 }
+
+.logo{
+ padding: 20px;
+  max-width:9%;
+  max-height:10%;
+}
