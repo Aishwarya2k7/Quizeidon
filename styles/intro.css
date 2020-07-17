@@ -1,0 +1,163 @@
+body{
+  font-family: Exo, sans-serif;
+
+}
+
+.section{
+  width:250px;
+  height:60px;
+  margin-top:100px;
+  margin-left:650px;
+  border:2px solid #e21d43;
+ /* background:linear-gradient(45deg,#0CF5F5,#e21d43);*/
+animation-name: wel;
+animation-duration: 4s;
+animation-fill-mode: forwards;
+}
+
+@keyframes wel{
+  0%{
+    transform:scale(0.5);
+    opacity:0.1;
+    
+  }
+  50%{
+    transform:scale(1);
+    opacity:1;
+  }
+ 
+  100%{
+    transform:scale(1)
+    opacity:1;
+  }
+
+}
+
+
+
+.section> .welcome{
+  text-align:center;
+  margin:10px;
+  font-size:38px;
+  color: #e21d43;
+  
+}
+
+.Q{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    #1DE2BC,
+    #fa7b94
+  );
+  height: 200px;
+  width: 200px;
+  border-radius:50%;
+  animation-name:symbol;
+  animation-delay: 2s;
+  animation-duration:3s;
+  animation-fill-mode: forwards;
+}
+
+.Q::before{
+  position: absolute;
+  content:"";
+  top: 100px;
+  left:100px;
+  background-color:white;
+  height: 100px;
+  width: 100px;
+  
+}
+.Q::after{
+  position: absolute;
+  content:"";
+  top: 100px;
+  left:100px;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  
+}
+
+.T{
+  position:relative;
+  content:"";
+  top:250px;
+  left:43px;
+  margin:auto;
+  background: linear-gradient(
+    180deg,
+    #1DE2BC,
+    #fa7b94
+  );
+  height: 60px;
+  width: 90px;
+  
+  transform:rotate(20deg);
+  animation-name:tilde;
+  animation-delay: 0;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes symbol{
+  50%{
+    transform:rotate(20deg);
+  }
+  100%{
+    transform:rotate(20deg);
+  }
+}
+@keyframes tilde{
+  0%{
+    opacity:0;
+  }
+  20%{
+    opacity:0
+  }
+  50%{
+    opacity:0;
+  }
+  70%{
+    opacity:0
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+.mainlink{
+  position:relative;
+  top:350px;
+  left:620px;
+}
+ .begin{
+  color:black;
+  background-color: #1DE2BC;
+  font-size:28px;
+  font-family:Exo;
+  width:350px;
+  height:80px;
+  border: 0px;
+ animation-name:begin;
+ animation-duration:8s;
+}
+
+@keyframes begin{
+  0%{
+    opacity:0;
+  }
+  70%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
