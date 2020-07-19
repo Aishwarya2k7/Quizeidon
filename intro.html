@@ -8,20 +8,25 @@
   <link rel="stylesheet" href="styles/intro.css">
 </head>
 <body>
+  
   <div class="header">
-    <div class="section">
+   
       <h1 class="welcome">Welcome</h1>
-    </div>
-    <div class="Q">
-
-    </div>
-    <div class="T"></div>
+    <div class="icon">
+      <div class="Q"></div>
   </div>
+  
   <div class="mainlink">
-    <button class="begin" onclick="begin()">Let the journey begin!
+    <button class="begin" accesskey="b" onclick="begin()">Let the journey begin!
 
     </button>
   </div>
+</div>
+  <audio autoplay>
+    <source src="sounds/s2.mp3" type="audio/mp3">
+      <p>Your browser doesn't support HTML5 audio.</p>
+  </audio>
+  
   <script>
     function begin(){
       window.location.replace("index.html");
