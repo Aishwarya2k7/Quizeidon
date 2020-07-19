@@ -3,18 +3,29 @@ body{
 
 }
 
-.section{
-  width:250px;
-  height:60px;
-  margin-top:100px;
-  margin-left:650px;
-  border:2px solid #e21d43;
- /* background:linear-gradient(45deg,#0CF5F5,#e21d43);*/
-animation-name: wel;
-animation-duration: 4s;
-animation-fill-mode: forwards;
+.header{
+  max-width:100%;
+  height:auto;
 }
 
+
+
+
+
+.welcome{
+ 
+  font-size:38px;
+  color: #e21d43;
+  border:2px solid #e21d43;
+  width:180px;
+  text-align:center;
+  padding:10px;
+  margin-top: 7%;
+  margin-left:43%;
+ animation-name: wel;
+ animation-duration: 4s;
+ animation-fill-mode: forwards;
+}
 @keyframes wel{
   0%{
     transform:scale(0.5);
@@ -27,20 +38,10 @@ animation-fill-mode: forwards;
   }
  
   100%{
-    transform:scale(1)
+    transform:scale(1);
     opacity:1;
   }
 
-}
-
-
-
-.section> .welcome{
-  text-align:center;
-  margin:10px;
-  font-size:38px;
-  color: #e21d43;
-  
 }
 
 .Q{
@@ -55,8 +56,8 @@ animation-fill-mode: forwards;
     #1DE2BC,
     #fa7b94
   );
-  height: 200px;
-  width: 200px;
+  height: 210px;
+  width: 210px;
   border-radius:50%;
   animation-name:symbol;
   animation-delay: 2s;
@@ -77,19 +78,8 @@ animation-fill-mode: forwards;
 .Q::after{
   position: absolute;
   content:"";
-  top: 100px;
-  left:100px;
-  background-color: white;
-  height: 100px;
-  width: 100px;
-  
-}
-
-.T{
-  position:relative;
-  content:"";
-  top:250px;
-  left:43px;
+  top:150px;
+  left:150px;
   margin:auto;
   background: linear-gradient(
     180deg,
@@ -99,13 +89,15 @@ animation-fill-mode: forwards;
   height: 60px;
   width: 90px;
   
-  transform:rotate(20deg);
+  transform:rotate(5deg);
   animation-name:tilde;
   animation-delay: 0;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   
 }
+
+
 
 @keyframes symbol{
   50%{
@@ -134,9 +126,9 @@ animation-fill-mode: forwards;
 }
 
 .mainlink{
-  position:relative;
-  top:350px;
-  left:620px;
+  position:absolute;
+  top:80%;
+  left:40%;
 }
  .begin{
   color:black;
